@@ -1,0 +1,41 @@
+/* Other rules */
+/* COMMON STYLES */
+h1 {
+    display: flex;
+    font-size: 56px;
+    width: 60%
+}
+
+body{
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto
+}
+
+header{
+    background-color: #273338;
+
+}
+
+.header-items{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    width: 100%;
+}
+
+.user-details{
+    display: flex;
+    justify-content: flex-end;
+   width: 40%;
+}
+
+.feather{
+    max-width: 50px;
+}
