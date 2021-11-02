@@ -2,8 +2,8 @@ import UserIcon from "./UserIcon";
 
 const User = () => {
   return (
-    <div className = "user-details">
-      <h3>UserName</h3>
+    <div className="user-details">
+      <h3>Etienne</h3>
       <UserIcon />
     </div>
   );

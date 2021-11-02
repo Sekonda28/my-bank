@@ -1,14 +1,38 @@
 /* Other rules */
 /* COMMON STYLES */
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     display: flex;
     font-size: 56px;
     width: 60%
 }
 
-body{
+h2 {
+    font-size: 32px;
+    color: white;
+}
+
+h3 {
+    font-size: 28px;
+    color: white;
+    padding-right: 40px;
+}
+
+p {
+    font-size: 24px;
+}
+
+body {
     max-width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: #ECEFF1;
+}
+
+.App {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .container {
@@ -16,26 +40,101 @@ body{
     margin: 0 auto
 }
 
-header{
+/* HEADER */
+header {
     background-color: #273338;
 
 }
 
-.header-items{
+.header-items {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding: 40px;
     width: 100%;
 }
 
-.user-details{
+.user-details {
     display: flex;
     justify-content: flex-end;
-   width: 40%;
+    align-items: center;
+    width: 40%;
 }
 
-.feather{
-    max-width: 50px;
+.feather {
+    max-width: 75px;
+    border: white 2px solid;
+    border-radius: 50%
+}
+
+/* ACCOUNTS */
+
+.account {
+    display: flex;
+    max-width: 960px;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px
+}
+
+.account-transactions {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+
+}
+
+.transaction-line {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.date {
+    flex: 1;
+
+}
+
+.date p {
+    font-size: 20px;
+    color: rgb(124, 124, 124)
+}
+
+.description {
+    flex: 3;
+    text-align: left
+}
+
+.amount {
+    flex: 1;
+    text-align: right
+}
+
+/* BUTTON */
+
+.button-style {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px
+}
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    color: rgb(124, 124, 124);
+    background-color: white;
+    border-radius: 10px;
+    ;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: inherit
 }

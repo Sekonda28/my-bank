@@ -5,9 +5,19 @@ import data from "./assets/account-data.json";
 
 const App = () => {
   return (
-    <div className = "App">
+    <div className="App">
       <Header />
-      <Accounts />
+      {data.map((elem, index) => {
+        return (
+          <Accounts
+            key={index}
+            name={elem.name}
+            balance={elem.balance}
+            color={elem.color}
+            operations={elem.operations}
+          />
+        );
+      })}
     </div>
   );
 };
